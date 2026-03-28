@@ -79,7 +79,7 @@ ul li button {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url(/src/images/hero-img.png);
+  background-image: url(../images/hero-img.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -141,7 +141,7 @@ ul li button {
 }
 
 .conference {
-  background-image: url(/src/images/Conference-room.png);
+  background-image: url(../images/Conference-room.png);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
