@@ -3,42 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav class="container">
-        <div class="logo">
-          <img src="images/logo.png" alt="Logo" />
-        </div>
-        <ul class="toggle">
-          <li><a href="index.html">About the Place</a></li>
-          <li><a href="leasing.html">Leasing </a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery </a></li>
-          <li><a href="contact.html">Contact Us </a></li>
-          <li>
-            <a href="book-now.html"><button>BOOK NOW</button></a>
-          </li>
-        </ul>
-        <div class="toggle_mobile">
-          <div class="toggle_close">=</div>
-          <div class="toggle_open">x</div>
-        </div>
-      </nav>
-    </header>
-    <section class="hero">
       <div class="container">
-        <div class="hero_content_box">
-          <div class="hero_content">
-            <h1>About the Place</h1>
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.png" alt="logo" />
+          </div>
+          <ul>
+            <li><a href="#aboutUs">About the Place </a></li>
+            <li><a href="#leasing">Leasing</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
+            <li><a href="#" class="book-now">BOOK NOW</a></li>
+          </ul>
+          <!-- menu-toggle mobile  -->
+          <div class="menu-toggle">
+            <div class="open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="aboutUs">
+      <div class="container">
+        <div class="about">
+          <div class="aboutInnerDiv">
+            <h2>About the Place</h2>
             <p>
               The Dewart Building is a beautifully maintained, historic building
               loaded with charm. Unlike other downtown office spaces that tend
@@ -63,16 +71,13 @@
         </div>
       </div>
     </section>
-    <section class="dewart_building_section">
+    <section>
       <div class="container">
-        <div class="dewart_building">
-          <div class="dewart_building_container">
-            <img
-              src="images/Vector-Smart-Object.png"
-              alt="History of Dewart building"
-            />
+        <div class="history">
+          <div class="history-img">
+            <img src="./images/Vector-Smart-Object.png" alt="history of" />
           </div>
-          <div class="dewart_building_content">
+          <div class="content">
             <h2>History of Dewart building</h2>
             <p>
               The  Dewart Building at 300 State Street New London was originally
@@ -92,10 +97,10 @@
     </section>
     <section class="conference">
       <div class="container">
-        <div class="conference_content">
+        <div class="content">
           <h2>
-            The Dewart Building has a <br />conference room located on the
-            <br />second floor of the building
+            The Dewart Building has a conference room located on the second
+            floor of the building
           </h2>
           <a href="#">
             <button>BOOK NOW</button>
@@ -103,114 +108,185 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="leasing">
       <div class="container">
         <div class="leasing">
-          <h2>Leasing - The Dewart at 330 State Street</h2>
-          <p>
-            Each space is unique in size and configuration. Currently we have 4
-            units available at ranging from 300-2500 sq feet. Here are some
-            examples of different units, used for offices, recording studio and
-            yoga space. Heat and electricity are provided by 300 State Street
-            Partners.
-          </p>
-        </div>
-        <div class="card_wrapper">
-          <div class="card">
-            <div class="card_img_wrapper">
-              <img src="images/Vector-Smart-Object1-1.png" alt="card" />
-            </div>
-            <div class="card_content">
-              <h4>Office Room 1</h4>
-              <p>320 sq feet</p>
-            </div>
+          <div class="top">
+            <h2>Leasing - The Dewart at 330 State Street</h2>
+            <p>
+              Each space is unique in size and configuration. Currently we have
+              4 units available at ranging from 300-2500 sq feet. Here are some
+              examples of different units, used for offices, recording studio
+              and yoga space. Heat and electricity are provided by 300 State
+              Street Partners.
+            </p>
           </div>
-          <div class="card">
-            <div class="card_img_wrapper">
-              <img src="images/Vector-Smart-Object1-1.png" alt="card" />
+          <div class="bottom">
+            <div class="card">
+              <div class="card-top">
+                <img src="./images/008.png" alt="Leasing site" />
+              </div>
+              <div class="card-bottom">
+                <p class="title">Office Room</p>
+                <p>320 sq feet</p>
+              </div>
             </div>
-            <div class="card_content">
-              <h4>Office Room 1</h4>
-              <p>320 sq feet</p>
+            <div class="card">
+              <div class="card-top">
+                <img
+                  src="./images/Vector Smart Object.png"
+                  alt="Leasing site"
+                />
+              </div>
+              <div class="card-bottom">
+                <p class="title">Office Room</p>
+                <p>320 sq feet</p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card_img_wrapper">
-              <img src="images/Vector-Smart-Object1-1.png" alt="card" />
+            <div class="card">
+              <div class="card-top">
+                <img
+                  src="./images/Vector Smart Object (1).png"
+                  alt="Leasing site"
+                />
+              </div>
+              <div class="card-bottom">
+                <p class="title">Office Room</p>
+                <p>320 sq feet</p>
+              </div>
             </div>
-            <div class="card_content">
-              <h4>Office Room 1</h4>
-              <p>320 sq feet</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_img_wrapper">
-              <img src="images/Vector-Smart-Object1-1.png" alt="card" />
-            </div>
-            <div class="card_content">
-              <h4>Office Room 1</h4>
-              <p>320 sq feet</p>
+            <div class="card">
+              <div class="card-top">
+                <img
+                  src="./images/Vector Smart Object (2).png"
+                  alt="Leasing site"
+                />
+              </div>
+              <div class="card-bottom">
+                <p class="title">Office Room</p>
+                <p>320 sq feet</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section id="gallery">
       <div class="gallery">
-        <div class="item item1">
-          <div class="item_overlay"></div>
-          <div class="item_overlay_search">
-            <img src="images/Search.png" alt="" />
-          </div>
+        <div class="gallery-card item-1">
           <img
-            class="item_img"
-            src="images/Vector-Smart-Object1-1.png"
+            class="gallery-card-img"
+            src="./images/Vector Smart Object (3).png"
             alt=""
           />
+          <img
+            class="search-icon"
+            src="./images/Search.png"
+            alt="search icon"
+          />
+          <div class="overlay"></div>
         </div>
-        <div class="item item2">
-          <div class="item_overlay"></div>
-          <div class="item_overlay_search">
-            <img src="images/Search.png" alt="" />
-          </div>
+        <div class="gallery-card item-2">
           <img
-            class="item_img"
-            src="images/Vector-Smart-Object1-1.png"
+            class="gallery-card-img"
+            src="./images/Vector Smart Object (4).png"
             alt=""
           />
+          <img
+            class="search-icon"
+            src="./images/Search.png"
+            alt="search icon"
+          />
+          <div class="overlay"></div>
         </div>
-        <div class="item item3">
-          <div class="item_overlay"></div>
-          <div class="item_overlay_search">
-            <img src="images/Search.png" alt="" />
+        <div class="gallery-card item-3">
+          <div class="gallery-card gallery-1">
+            <img
+              class="gallery-card-img"
+              src="./images/Vector-Smart-Object1-1.png"
+              alt=""
+            />
+            <img
+              class="search-icon"
+              src="./images/Search.png"
+              alt="search icon"
+            />
+            <div class="overlay"></div>
           </div>
-          <img
-            class="item_img"
-            src="images/Vector-Smart-Object1-1.png"
-            alt=""
-          />
+          <div class="gallery-card gallery-2">
+            <img class="gallery-card-img" src="./images/293.png" alt="" />
+            <img
+              class="search-icon"
+              src="./images/Search.png"
+              alt="search icon"
+            />
+            <div class="overlay"></div>
+          </div>
         </div>
-        <div class="item item4">
-          <div class="item_overlay"></div>
-          <div class="item_overlay_search">
-            <img src="images/Search.png" alt="" />
-          </div>
+        <div class="gallery-card item-4">
           <img
-            class="item_img"
-            src="images/Vector-Smart-Object1-1.png"
+            class="gallery-card-img"
+            src="./images/Vector Smart Object (5).png"
             alt=""
           />
+          <img
+            class="search-icon"
+            src="./images/Search.png"
+            alt="search icon"
+          />
+          <div class="overlay"></div>
         </div>
-        <div class="item item5">
-          <div class="item_overlay"></div>
-          <div class="item_overlay_search">
-            <img src="images/Search.png" alt="" />
+      </div>
+      <div class="gallery-popup">
+        <div class="container gallery-popup-container">
+          <div class="gallery-popup-header">
+            <div class="close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
           </div>
-          <img
-            class="item_img"
-            src="images/Vector-Smart-Object1-1.png"
-            alt=""
-          />
+          <div class="gallery-popup-body">
+            <div class="top">
+              <div class="image-wrapper">
+                <img
+                  class="top-img item-1"
+                  src="./images/Vector Smart Object (3).png"
+                  alt=""
+                />
+              </div>
+              <div class="image-wrapper">
+                <img
+                  class="top-img item-2"
+                  src="./images/Vector Smart Object (4).png"
+                  alt=""
+                />
+              </div>
+              <div class="image-wrapper">
+                <img
+                  class="top-img item-3"
+                  src="./images/Vector-Smart-Object1-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="image-wrapper">
+                <img class="top-img item-4" src="./images/293.png" alt="" />
+              </div>
+              <div class="image-wrapper">
+                <img
+                  class="top-img item-5"
+                  src="./images/Vector Smart Object (5).png"
+                  alt=""
+                />
+              </div>
+              <!-- icons right and left -->
+              <div class="icon-right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <div class="icon-left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+            </div>
+            <div class="bottom"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -263,33 +339,11 @@
       </div>
     </section>
     <footer>
-      <div class="container">
-        <div class="copyright">
-          <p>
-            © All Rights resevered 300 Street Partners, LLP, 300 State Street,
-            Suite 319, New London, CT 06320
-          </p>
-        </div>
-      </div>
+      <p>
+        © All Rights resevered 300 Street Partners, LLP, 300 State Street, Suite
+        319, New London, CT 06320
+      </p>
     </footer>
   </body>
-  <script>
-    const toggle = document.querySelector(".toggle");
-    const toggle_close = document.querySelector(".toggle_close");
-    const toggle_open = document.querySelector(".toggle_open");
-    toggle_close.addEventListener("click", (event) => {
-      toggle.classList.add("toggle_show");
-      toggle_close.style.display = "none";
-      toggle_open.style.display = "block";
-    });
-    toggle_open.addEventListener("click", (event) => {
-      toggle.classList.remove("toggle_show");
-      toggle_close.style.display = "block";
-      toggle_open.style.display = "none";
-    });
-  </script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6myHzS10YXdcazAFalmXvDkrYCp5cLc8&libraries=maps,marker&v=weekly&internal_usage_attribution_ids=gmp_git_jsapisamples_v1_web-components"
-    defer
-  ></script>
+  <script src="./script/index.js"></script>
 </html>
